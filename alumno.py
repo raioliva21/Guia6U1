@@ -4,8 +4,10 @@ from plant import Plant
 class Alumno():
 
     def __init__(self, nombre) -> None:
-        self._nombre = nombre #nombre de alumno
-        self._planta = [] #lista de plantas
+        #nombre de alumno
+        self._nombre = nombre 
+        #plantas que alumno posee
+        self._planta = [] 
     
     @property
     def nombre(self):
