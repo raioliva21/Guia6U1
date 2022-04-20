@@ -8,8 +8,8 @@ class Garden():
         self._alumnos = alumnos #lista de alumnos
         # atributo publico
         self.ventana = "[ventana]"
-        pass
 
+    """ imprime representacion grafica de vasos y ventanas """
     def get_vista(self, filas, columnas):
         print(self.ventana*3)
         for fila in range(0,filas):
@@ -20,6 +20,7 @@ class Garden():
                     end="")
             print("")
     
+    """ imprime nombre de alumnos por separado """
     def get_lista_alumnos(self):
         for alumno in self._alumnos:
             print(alumno.nombre)
@@ -28,7 +29,6 @@ class Garden():
         coincidencia = None
         if isinstance (nombre_estudiante, str):
             nombre_estudiante = nombre_estudiante.capitalize()
-            #nombre_estudiante.capitalize()
             for alumno in self._alumnos:
                 if alumno.nombre == nombre_estudiante:
                     coincidencia = True
